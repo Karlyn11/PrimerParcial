@@ -330,13 +330,22 @@ footer .social-links {
 	nav ul li:last-child a:hover{
 		color: rgb(255,0,0);
 	}
+		.menu{
+		display: flex;
+		flex-direction: row;
+		width: 35vw;
+		justify-content: space-between;
+		font-size: 20px;
+		margin: 0;
+		padding: 0;
+	}
 	.about .container{
 		display:flex;
 		flex-wrap: wrap;
 		flex-direction: row;
 		justify-content: space-around;
 		align-content: center;
-		margin-bottom: 60px;
+		margin-bottom: 10px;
 }
 	.about .container h2{
 		width: 100%;
@@ -348,7 +357,7 @@ footer .social-links {
 		width: 40%; 
 }
 				.about .container .contact input:last-child{
-		width: 50%;
+		width: 40%;
 }
 		.header .logo{
 		height: 29.99px;
