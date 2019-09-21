@@ -347,10 +347,12 @@ footer .social-links {
 			.about .container .contact{
 		width: 40%; 
 }
-				.about .container .contact inpuy:last-child{
+				.about .container .contact input:last-child{
 		width: 50%;
 }
-	
+		.header .logo{
+		height: 29.99px;
+	}
 
 @media only screen and (min-width: 1440px) {
 
@@ -359,6 +361,5 @@ footer .social-links {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
-		flex: 
     }
 }
