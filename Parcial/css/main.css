@@ -82,9 +82,11 @@ p{
     list-style: none;
     padding: 0;
     margin-top: 3em;
+	margin-bottom: 3em;
     display: flex;
     flex-direction: row;
-    justify-content: center
+    justify-content: center;
+		align-items: center;
 
 }
 
@@ -256,12 +258,25 @@ footer .social-links {
     padding: 0.5em;
     margin-top: 5px;
 }
+	/*se hace el cambio de tamaño de los iconos*/
+	.fas.fa-arrow-circle-down{
+		color: #0AC693;
+		font-size: 100px;
+		margin-bottom: 3rem;
+	}
+
+	.fab{
+		font-size: 70px;
+		margin: 10px;
+	}
+
 
 .menu li a {
     color: white;
     text-decoration: none;
     
 }
+
 
 .contact-form{
 	margin: 0% 4% 4% 4%;
@@ -270,26 +285,32 @@ footer .social-links {
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
   
+	/*Se hace la correccion de la direccion de los articulos*/
     .post ul {
-        list-style: none;
+         list-style: none;
         display: flex;
+		flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+		align-items: center;
     }
     
+	/* Se corrige los articulos es decir los tamaños*/
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
         margin: 1rem 2rem;
         flex: 1 0 300px;
+		 width: 80%;
     }
 
-
+/* Tamaño del logo*/
     .logo {
         width: 150px;
         margin: 1.5em;
     }
 
+	/* Se hace el cambio del menu en el bloque de nav*/
     .show-desktop {
         display: block;
     }
@@ -307,29 +328,23 @@ footer .social-links {
         display: flex;
         margin-top: 1em;
     }
-	
-	.fas.fa-arrow-circle-down{
-		color: #0AC693;
-		font-size: 100px;
-		margin-bottom: 3rem;
-	}
-
-	.fab{
-		font-size: 70px;
-		margin: 10px;
-	}
 
 
-    /*TODO: FALTA CSS */
+    
 } 
 
 @media only screen and (min-width: 1024px) {
 
-       /*TODO: FALTA CSS */
+        /* Se cambio el tamaño del logo */
+	.header .logo{
+		height: 29.99px;
+	}
 	
+	/* Se hace el cambio de color en la palabra contacto cuando se pasa encima el mouse*/
 	nav ul li:last-child a:hover{
 		color: rgb(255,0,0);
 	}
+	/* Distribucion del espacio en el nav*/
 		.menu{
 		display: flex;
 		flex-direction: row;
@@ -339,6 +354,7 @@ footer .social-links {
 		margin: 0;
 		padding: 0;
 	}
+	/*Configuracion de la seccion de contacto*/
 	.about .container{
 		display:flex;
 		flex-wrap: wrap;
@@ -347,28 +363,49 @@ footer .social-links {
 		align-content: center;
 		margin-bottom: 10px;
 }
+	
+	/*Se aumenta el tamaño del titulo de publicaciones*/
+	.container.post h2{
+		font-size: 15px;
+	}
+	/*ajustar la seccion de los articulos*/
+    .post ul {
+        list-style: none;
+        display: flex;
+		flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+		align-items: center;
+    }
+	/* Aumenta el titulo en publicaciones para que use el espacio disponible*/
 	.about .container h2{
 		width: 100%;
 }
+	/*Se ajusta el tamaño del parrafo*/
 		.about .container .bio-info{
 		width: 50%;
 }
+	/*Se ajusta el tamaño del formulario*/
 			.about .container .contact{
 		width: 40%; 
 }
+	/*Se ajusta el tamaño del boton contactar*/
 				.about .container .contact input:last-child{
 		width: 40%;
 }
+	
+	/* Cambio del tamaño del logo*/
 		.header .logo{
 		height: 29.99px;
 	}
 
 @media only screen and (min-width: 1440px) {
 
-    /*TODO: FALTA CSS */
+    /* Se impide que crezca el tamaño completo de la pantalla */
     .container {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
     }
 }
+	
